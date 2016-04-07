@@ -38,7 +38,7 @@ assert.notDeepStrictEqual(['foo'], ['bar'])
 // TypeError: undefined is not a function
 ```
 
-if above function is undefined, assert-polyfill defines the polyfill functions.
+if above function is `undefined`, `assert-polyfill` defines the polyfill functions.
 
 ```js
 require('assert-polyfill');
