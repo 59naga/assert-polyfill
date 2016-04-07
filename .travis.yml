@@ -28,6 +28,7 @@ before_script:
 script:
   - npm run test-meta
   - npm run cover
+  - npm run report
   - npm run lint
 
 # Npm publish options
