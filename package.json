@@ -1,0 +1,59 @@
+{
+  "name": "assert-polyfill",
+  "version": "0.0.0",
+  "description": "an exterminate 'TypeError: undefined is not a function' you encounter in node-v0",
+  "main": "lib",
+  "dependencies": {
+    "core-assert": "^0.1.3"
+  },
+  "scripts": {
+    "start": "ava --watch",
+    "test": "ava",
+    "test-meta": "mocha test/meta.js",
+    "cover": "nyc --reporter=lcov --reporter=text ava",
+    "lint": "eslint lib test"
+  },
+  "ava": {
+    "files": [
+      "test/index.js"
+    ]
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "chokidar": "^1.4.3",
+    "eslint": "^2.7.0",
+    "eslint-config-import": "^0.13.0",
+    "eslint-config-standard": "^5.1.0",
+    "eslint-plugin-import": "^1.4.0",
+    "eslint-plugin-promise": "^1.1.0",
+    "eslint-plugin-standard": "^1.3.2",
+    "espower-loader": "^1.0.0",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^2.4.5",
+    "power-assert": "^1.3.1"
+  },
+  "keywords": [
+    "builtin",
+    "core",
+    "ponyfill",
+    "polyfill",
+    "shim",
+    "deep",
+    "strict",
+    "equal",
+    "equality",
+    "eq",
+    "same",
+    "algorithm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/59naga/assert-polyfill.git"
+  },
+  "author": "59naga <i59naga@icloud.com> (http://berabou.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/59naga/assert-polyfill/issues"
+  },
+  "homepage": "https://github.com/59naga/assert-polyfill#readme"
+}
